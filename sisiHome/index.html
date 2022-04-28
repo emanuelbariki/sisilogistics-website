@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        .primary_activities-row .primary_activities-col {
-        background: #ffffff2b;
-    }
-
-    .banner-btn{
-        margin-top:150px;
-    }
-        </style>
+        .banner-btn {
+            margin-top: 150px;
+        }
+        
+        .primary_activities-col {
+            transform: translateY(-15px);
+            box-shadow: 0 10px #92902a;
+            transition: 0.2s;
+        }
+    </style>
 </head>
-<body >
-    
+
+<body>
+
 
 
 
@@ -36,69 +40,89 @@
 
     <section id="banner">
         <img src="image/logo.png" class="logo">
-        <div class="banner-text"> 
+        <div class="banner-text">
             <div class="banner-btn">
-     
-   
 
-        <div class="primary_activities-row">  <!--team-->
-                <div class="primary_activities-col">
 
-                    <img src="image/ICONS-12.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
-                    <!-- <i class="fa-solid fa-engine"></i> -->
-                    <h2>Motors </h2>
-                    <!-- <p class="role"></p> -->
-                    <p></p>
 
-                    <a href="#"><span></span>Order</a>
-                </div>
+                <div class="primary_activities-row">
+                    <!--team-->
+                    <div class="primary_activities-col">
 
-        
-                 <div class="primary_activities-col">
-                    <img src="image/ICONS-13.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
+                        <img src="image/ICONS-12.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
+                        <!-- <i class="fa-solid fa-engine"></i> -->
+                        <h2>Motors </h2>
+                        <!-- <p class="role"></p> -->
+                        <p></p>
+
+                        <a href="#"><span></span>Order</a>
+                    </div>
+
+
+                    <div class="primary_activities-col">
+                        <img src="image/ICONS-13.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
                         <h2>Logistics</h2>
                         <!-- <i class="fa-solid fa-forward"></i>
                         <p class="role"></p> -->
                         <p></p>
 
                         <a href="#"><span></span>Transfer</a>
-                </div>
-                
+                    </div>
 
-                <div class="primary_activities-col">
-                    <img src="image/ICONS-10.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
-                    <!-- <i class="fa-solid fa-umbrella"></i> -->
+
+                    <div class="primary_activities-col">
+                        <img src="image/ICONS-10.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
+                        <!-- <i class="fa-solid fa-umbrella"></i> -->
                         <h2>Insurance</h2>
                         <!-- <p class="role"></p> -->
                         <p></p>
 
                         <a href="#"><span></span>Secure</a>
-                </div>
+                    </div>
 
 
-                <div class="primary_activities-col">
-                    <img src="image/ICONS-11.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
-                    <!-- <i class="fab fa-creative-commons"></i> -->
+                    <div class="primary_activities-col">
+                        <img src="image/ICONS-11.png" class="responsive" alt="Mike" style="width: 100px; height: 100px;">
+                        <!-- <i class="fab fa-creative-commons"></i> -->
                         <h2>Creative</h2>
                         <!-- <p class="role"></p> -->
                         <p></p>
 
                         <a href="#"><span></span>Ideate</a>
+                    </div>
                 </div>
-         </div>
-    </div>
+            </div>
 
-</div>
+        </div>
 
     </section>
 
-    <div id="sideNav"> 
-        <nav> 
+    <div id="sideNav">
+        <nav>
             <ul>
-                <li><a href="#"><h3>Get in Touch</h3></a></li>
-                <li><a href="#"><h3><p>P.O.BOX 80151</p><p>Dar es salaam <i class="fa fa-map-marker"></i></p></h3></a></li>
-                <li><a href="#"><h3>+255-786-692-235 <i class="fa fa-phone"></i></h3></a></li>
-                <li><a href="#"><h3>Sisiltd@gmail.com <i class="fa fa-paper-plane"></i></h3></a></li>
+                <li>
+                    <a href="#">
+                        <h3>Get in Touch</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>
+                            <p>P.O.BOX 80151</p>
+                            <p>Dar es salaam <i class="fa fa-map-marker"></i></p>
+                        </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>+255-786-692-235 <i class="fa fa-phone"></i></h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Sisiltd@gmail.com <i class="fa fa-paper-plane"></i></h3>
+                    </a>
+                </li>
             </ul>
 
 
@@ -112,38 +136,36 @@
                 <i class="fa fa-youtube-play"></i>
                 <p>@ 2022 copyright</p>
             </div>
-        </section>
+            </section>
         </nav>
     </div>
-    
+
     <div id="menuBtn">
-        <img src="image/py.png" id="menu"> 
-        
+        <img src="image/py.png" id="menu">
+
     </div>
 
 
 
 
-<script>
-    var menuBtn = document.getElementById("menuBtn")
-    var sideNav = document.getElementById("sideNav")
-    var menu  = document.getElementById("menu")
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
 
-    sideNav.style.left  = "-250px"
+        sideNav.style.left = "-250px"
 
-    menuBtn.onclick = function(){
-        if(sideNav.style.left == "-250px"){
-            sideNav.style.left = "0px";
-             menu.src = "image/klz.png";
-        } 
-        else{
-            sideNav.style.left = "-250px";
-             menu.src = "image/py.png";
+        menuBtn.onclick = function() {
+            if (sideNav.style.left == "-250px") {
+                sideNav.style.left = "0px";
+                menu.src = "image/klz.png";
+            } else {
+                sideNav.style.left = "-250px";
+                menu.src = "image/py.png";
+            }
         }
-    }
-    
-</script>
+    </script>
 
 </body>
-</html> 
 
+</html>
