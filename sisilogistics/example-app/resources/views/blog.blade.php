@@ -15,7 +15,7 @@
             </div>
             <div class="banner-right position-relative">
               <p>
-                If you are looking at blank cassettes on the web, you may be very confused.
+                Get to view and focus on our review post from time to time to build a more interest and connection.
               </p>
               <span class="main_btn mt-4 mt-md-0" href="#">
                 <a href="index.html" class="text-white">Home</a>
