@@ -37,35 +37,9 @@
   <section class="section_gap">
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
-        <div id="map" style="height: 480px;"></div>
-        <script>
-          function initMap() {
-            var uluru = { lat: -6.818135665197172, lng: 39.28705922654266  };
-            var grayStyles = [
-              {
-                featureType: "all",
-                stylers: [
-                  { saturation: -90 },
-                  { lightness: 50 }
-                ]
-              },
-              { elementType: 'labels.text.fill', stylers: [{ color: '#A3A3A3' }] }
-            ];
-            var map = new google.maps.Map(document.getElementById('map'), {
-              center: { lat: -6.818135665197172, lng: 39.28705922654266 },
-              zoom: 9,
-              styles: grayStyles,
-              scrollwheel: false
-            });
-        
-          }
-
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
-     
-        {{-- AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I      //ORIGINAL APIKEY FROM GOOGLE TEMPLATE
-        AIzaSyBDfqYxg6t0slt-NPCMBEdYvryf57xDrbg           //API KEYS FROM MY GOOGLE MAP PLATFORM  --}}   
-
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15846.399474679385!2d39.2870485!3d-6.8184233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x582297659654c956!2sSMART%20INTEGRATED%20SOLUTIONS%20INTERNATIONAL%20(SISI)%20LIMITED!5e0!3m2!1sen!2stz!4v1652801917355!5m2!1sen!2stz" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
 
       <div class="row">
@@ -107,22 +81,22 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-home"></i></span>
             <div class="media-body">
-              <h3>Posta, Samora Avenue,</h3>
-              <p>NHC House, 9th Floor, Office no 907</p>
+              <h3>Posta, Samora Avenue, </h3>
+              <p>NHC House 9th Floor Suite no. 907, 80151, <br>Dar es Salaam</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
             <div class="media-body">
               <h3><a href="tel:738133775">(255) 738 133 775 </a></h3>
-              <p>Mon to sun 8am  to 17pm</p>
+              <p>Mon - Sat 9:00 am  to 05:30 pm</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-envelope-o"></i></span>
             <div class="media-body">
               <h3><a href="mailto:support@colorlib.com">info@sisilimited.co.tz</a></h3>
-              <p>Send us your query anytime!</p>
+              <p>Send us your queries</p>
             </div>
           </div>
         </div>
