@@ -48,9 +48,9 @@ We proud ourselves as among top fast and credible forwarders.
             <div class="col-lg-6 col-md-6">
               <div class="single-feature">
                 <img src="img/feature/f2.png" alt="">
-                <h4>Have a Question?</h4>
+                <h4>Creativity and enhanced technology</h4>
                 <p>
-                  Do you have accurate information about the car you want? Are you looking for a new Car? How to schedule a service online?
+                 Our state of the art technology gives you a better experience throughout our dealing with us. You must place your order and keep waiting relaxed we will do the rest.
                 </p>
                 <a href="#">Contact Us</a>
               </div>
@@ -58,21 +58,21 @@ We proud ourselves as among top fast and credible forwarders.
             <div class="col-lg-6 col-md-6">
               <div class="single-feature">
                 <img src="img/feature/f3.png" alt="">
-                <h4>Get a Quote</h4>
+                <h4>Trustworth</h4>
                 <p>
-                  The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                  We make good in every offer we give to customers there must be consistency in every step unless there are changes that are outside our control like changes in the government policies regarding import taxes permits or variation in quantity declared by the customer
                 </p>
-                <a href="#">Start a quote</a>
+                <a href="#">Read more</a>
               </div>
             </div>
             <div class="col-lg-6 col-md-6">
               <div class="single-feature">
                 <img src="img/feature/f4.png" alt="">
-                <h4>Shipping Calculator</h4>
+                <h4>Transparency</h4>
                 <p>
-                  The French Revolutioncons tituted for the conscience of the dominant the French Revolutioncons.
+                  We work on every transparency basis, we like our clients to know everything they need to know before making any decision. We present the information on our services as accurate to the best of our knowledge.
                 </p>
-                <a href="#">Get Estimate</a>
+                <a href="#">Read more</a>
               </div>
             </div>
           </div>
