@@ -15,7 +15,7 @@
               </div>
               <div class="banner-right position-relative">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be very confused.
+                  We at sisi limited, are more happy to share our moments as we travel along the journey to solving problems by providing creative and innovative solutions.
                 </p>
                 <span class="main_btn mt-4 mt-md-0" href="#">
                   <a href="index.html" class="text-white">Home</a>
