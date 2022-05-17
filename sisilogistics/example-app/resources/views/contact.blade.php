@@ -40,7 +40,7 @@
         <div id="map" style="height: 480px;"></div>
         <script>
           function initMap() {
-            var uluru = { lat: -25.363, lng: 131.044 };
+            var uluru = { lat: -6.818135665197172, lng: 39.28705922654266  };
             var grayStyles = [
               {
                 featureType: "all",
@@ -52,15 +52,19 @@
               { elementType: 'labels.text.fill', stylers: [{ color: '#A3A3A3' }] }
             ];
             var map = new google.maps.Map(document.getElementById('map'), {
-              center: { lat: -31.197, lng: 150.744 },
+              center: { lat: -6.818135665197172, lng: 39.28705922654266 },
               zoom: 9,
               styles: grayStyles,
               scrollwheel: false
             });
+        
           }
 
         </script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+     
+        {{-- AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I      //ORIGINAL APIKEY FROM GOOGLE TEMPLATE
+        AIzaSyBDfqYxg6t0slt-NPCMBEdYvryf57xDrbg           //API KEYS FROM MY GOOGLE MAP PLATFORM  --}}   
 
       </div>
 
@@ -103,21 +107,21 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-home"></i></span>
             <div class="media-body">
-              <h3>Buttonwood, California.</h3>
-              <p>Rosemead, CA 91770</p>
+              <h3>Posta, Samora Avenue,</h3>
+              <p>NHC House, 9th Floor, Office no 907</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
             <div class="media-body">
-              <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-              <p>Mon to Fri 9am to 6pm</p>
+              <h3><a href="tel:738133775">(255) 738 133 775 </a></h3>
+              <p>Mon to sun 8am  to 17pm</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-envelope-o"></i></span>
             <div class="media-body">
-              <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
+              <h3><a href="mailto:support@colorlib.com">info@sisilimited.co.tz</a></h3>
               <p>Send us your query anytime!</p>
             </div>
           </div>
