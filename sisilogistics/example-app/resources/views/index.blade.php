@@ -107,36 +107,27 @@ We proud ourselves as among top fast and credible forwarders.
           <div class="row justify-content-center text-left section-title-wrap">
             <div class="col-lg-12">
               <h5>About Our Company</h5>
-              <h2>
-                Some statistics that we want <br>
-                to show our viewers
-              </h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-10">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 col-6 single_brand">
-                  <img src="img/about/brand1.png" alt="">
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 single_brand">
-                  <img src="img/about/brand2.png" alt="">
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 single_brand">
-                  <img src="img/about/brand3.png" alt="">
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 single_brand">
-                  <img src="img/about/brand4.png" alt="">
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 single_brand">
-                  <img src="img/about/brand5.png" alt="">
-                </div>
-                <div class="col-lg-4 col-md-4 col-6 single_brand">
-                  <img src="img/about/brand6.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
+
+<!--  table starting here-->
+              <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th> Name</th>
+                    <th>Gender</th>
+                  </tr> 
+                </thead>
+               <tbody>
+                <tr>
+                  <td>Nancy</td>
+                  <td>Female</td>
+                </tr>
+                <tr>
+                  <td>Arnold</td>
+                  <td>Male</td>
+                </tr>
+               </tbody>
+              </table>
+                <!--table end here -->
         </div>
 
         <div class="offset-lg-1 col-lg-4">
@@ -320,77 +311,7 @@ We proud ourselves as among top fast and credible forwarders.
                       </div>
                     </div>
 
-                    {{-- <div class="col-lg-4">
-                      <div class="form-group">
-                        <label for="lastName2">Last name</label>
-                        <input type="text" class="form-control" id="lastName2" placeholder="Enter last name" onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter last name'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                      <div class="form-group">
-                        <label for="emailAddress2">Email Address</label>
-                        <input type="email" class="form-control" id="emailAddress2" placeholder="Enter email address"
-                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                      <div class="form-group">
-                        <label for="cargoType2">Cargo Type</label>
-                        <input type="text" class="form-control" id="cargoType2" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter cargo type'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                      <div class="form-group">
-                        <label for="countryOfOrigin2">Country of Origin</label>
-                        <input type="text" class="form-control" id="countryOfOrigin2" placeholder="Enter country of origin"
-                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                      <div class="form-group">
-                        <label for="destination2">Destination</label>
-                        <input type="text" class="form-control" id="destination2" placeholder="Enter destination"
-                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <div class="form-group">
-                        <label for="quantity2">Quantity</label>
-                        <input type="text" class="form-control" id="quantity2" placeholder="Enter quantity" onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter quantity'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <div class="form-group">
-                        <label for="weight2">Weight</label>
-                        <input type="text" class="form-control" id="weight2" placeholder="Enter weight" onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter weight'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <div class="form-group">
-                        <label for="width2">Width</label>
-                        <input type="text" class="form-control" id="width2" placeholder="Enter width" onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter width'" />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                      <div class="form-group">
-                        <label for="height2">Height</label>
-                        <input type="text" class="form-control" id="height2" placeholder="Enter height" onfocus="this.placeholder = ''"
-                          onblur="this.placeholder = 'Enter height'" />
-                      </div>
-                    </div> --}}
+                   
                     <div class="col-lg-12 mt-4">
                       <div class="text-center confirm_btn_box">
                         <button class="main_btn text-uppercase">Request a Quote</button>
