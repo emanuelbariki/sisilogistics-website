@@ -214,7 +214,7 @@ We proud ourselves as among top fast and credible forwarders.
               <!-- Tab Content -->
               <div class="tab-content" id="nav-tabContent">
                 <form class="form-wrap" action="/getEstimatedPrice" method="POST">
-                  @csrf
+                 @csrf
                 <div class="tab-pane fade show active" id="nav-getEstimation" role="tabpanel" aria-labelledby="nav-getEstimation-tab">
                   <div class="row">
                     <div class="col-lg-4">
