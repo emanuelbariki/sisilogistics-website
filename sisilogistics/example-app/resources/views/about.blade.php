@@ -102,7 +102,97 @@
   </section>
   <!--================ End Feature Area =================-->
 
-  <!--================ Start Testimonial Area =================-->
+
+
+
+  <!--================ About Area =================-->
+  <section class="about-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="single-feature">
+                    <img src="img/feature/vision.png" alt="">
+                    <h2>OUR VISION</h2>
+                    <p>
+                      Is to allow you to focus on your core business while we manage your purchases and supply of goods and services in shorter time and at reasonable cost.
+                    </p>
+                  </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="single-feature">
+                    <img src="img/feature/mision.png" alt="">
+                    <h2>OUR MISSION</h2>
+                    <p>
+                   To offer the best international and domestic smart purchasing, buying, services and supply of products that enables our customers to make all the right moves in their purchases,buying and supply chain. Our aim is to be the best at what we do. We like to give 100% and offer every customer a first-class professional service. We believe in complete customer satiafaction of all our customers, business associates and colleagues.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offset-lg-1 col-lg-4">
+          <div class="about_box">
+            <div class="activity">
+              <div class="row">
+                <div class="col-lg-6 col-md-3 col-6">
+                  <div class="activity_box">
+                    <div>
+                      <img src="img/about/i1.png" alt="">
+                    </div>
+                    <h3>$<span class="counter">2500</span>+</h3>
+                    <p>Packages Delivered</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-3 col-6">
+                  <div class="activity_box">
+                    <div>
+                      <img src="img/about/i2.png" alt="">
+                    </div>
+                    <h3>$<span class="counter">500</span>+</h3>
+                    <p>Satisfied Clients</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-3 col-6">
+                  <div class="activity_box">
+                    <div>
+                      <img src="img/about/i3.png" alt="">
+                    </div>
+                    <h3>$<span class="counter">70</span>+</h3>
+                    <p>Contries reach</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-3 col-6">
+                  <div class="activity_box">
+                    <div>
+                      <img src="img/about/i4.png" alt="">
+                    </div>
+                    <h3 class="counter">5000</h3>
+                    <p>Tons of goods</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End About Are
+
+
+
+
+
+  <!-================ Start Testimonial Area =================-->
   <section class="testimonial-area">
     <div class="container">
       <div class="row justify-content-center section-title-wrap">
@@ -158,95 +248,7 @@
   </section>
   <!--================ end Testimonial Area =================-->
 
-  <!--================ About Area =================-->
-  <section class="about-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <div class="row justify-content-center text-left section-title-wrap">
-              <div class="col-lg-12">
-                <h5>About Our Company</h5>
-                <h2>
-                  Some statistics that we want <br>
-                  to show our viewers
-                </h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-10">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 single_brand">
-                    <img src="img/about/brand1.png" alt="">
-                  </div>
-                  <div class="col-lg-4 col-md-6 single_brand">
-                    <img src="img/about/brand2.png" alt="">
-                  </div>
-                  <div class="col-lg-4 col-md-6 single_brand">
-                    <img src="img/about/brand3.png" alt="">
-                  </div>
-                  <div class="col-lg-4 col-md-6 single_brand">
-                    <img src="img/about/brand4.png" alt="">
-                  </div>
-                  <div class="col-lg-4 col-md-6 single_brand">
-                    <img src="img/about/brand5.png" alt="">
-                  </div>
-                  <div class="col-lg-4 col-md-6 single_brand">
-                    <img src="img/about/brand6.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="offset-lg-1 col-lg-4">
-            <div class="about_box">
-              <div class="activity">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div class="activity_box">
-                      <div>
-                        <img src="img/about/i1.png" alt="">
-                      </div>
-                      <h3>$<span class="counter">2500</span>+</h3>
-                      <p>Packages Delivered</p>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-6">
-                    <div class="activity_box">
-                      <div>
-                        <img src="img/about/i2.png" alt="">
-                      </div>
-                      <h3>$<span class="counter">500</span>+</h3>
-                      <p>Satisfied Clients</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="activity_box">
-                      <div>
-                        <img src="img/about/i3.png" alt="">
-                      </div>
-                      <h3>$<span class="counter">70</span>+</h3>
-                      <p>Contries reach</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="activity_box">
-                      <div>
-                        <img src="img/about/i4.png" alt="">
-                      </div>
-                      <h3 class="counter">5000</h3>
-                      <p>Tons of goods</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--================ End About Area =================-->
+   
 
   
 
