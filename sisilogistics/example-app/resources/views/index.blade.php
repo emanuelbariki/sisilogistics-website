@@ -104,30 +104,32 @@ We proud ourselves as among top fast and credible forwarders.
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div class="row justify-content-center text-left section-title-wrap">
-            <div class="col-lg-12">
-              <h5>About Our Company</h5>
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                  <div class="single-feature">
+                    <img src="img/feature/vision.png" alt="">
+                    <h2>OUR VISION</h2>
+                    <p>
+                      Is to allow you to focus on your core business while we manage your purchases and supply of goods and services in shorter time and at reasonable cost.
+                    </p>
+                  </div>
+                </div>
 
-<!--  table starting here-->
-              <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th> Name</th>
-                    <th>Gender</th>
-                  </tr> 
-                </thead>
-               <tbody>
-                <tr>
-                  <td>Nancy</td>
-                  <td>Female</td>
-                </tr>
-                <tr>
-                  <td>Arnold</td>
-                  <td>Male</td>
-                </tr>
-               </tbody>
-              </table>
-                <!--table end here -->
+
+                <div class="col-lg-6 col-md-6">
+                  <div class="single-feature">
+                    <img src="img/feature/mision.png" alt="">
+                    <h2>OUR MISSION</h2>
+                    <p>
+                   To offer the best international and domestic smart purchasing, buying, services and supply of products that enables our customers to make all the right moves in their purchases,buying and supply chain. Our aim is to be the best at what we do. We like to give 100% and offer every customer a first-class professional service. We believe in complete customer satiafaction of all our customers, business associates and colleagues.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="offset-lg-1 col-lg-4">
@@ -199,7 +201,7 @@ We proud ourselves as among top fast and credible forwarders.
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-12">
           <div class="estimated-cost">
-            <form class="form-wrap" action="#">
+         
               <nav>
                 <div class="nav nav-tabs justify-content-md-start justify-content-center" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-getEstimation-tab" data-toggle="tab" href="#nav-getEstimation"
@@ -211,20 +213,22 @@ We proud ourselves as among top fast and credible forwarders.
 
               <!-- Tab Content -->
               <div class="tab-content" id="nav-tabContent">
+                <form class="form-wrap" action="/getEstimatedPrice" method="POST">
+                  @csrf
                 <div class="tab-pane fade show active" id="nav-getEstimation" role="tabpanel" aria-labelledby="nav-getEstimation-tab">
                   <div class="row">
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name"
-                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter first name'" />
+                        <input type="text" class="form-control" name="firstname" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name"
+                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter first name'" required />
                       </div>
                     </div>
 
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter last name" onfocus="this.placeholder = ''"
+                        <input type="text" class="form-control" name="lastname" id="lastName" placeholder="Enter last name" onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter last name'" />
                       </div>
                     </div>
@@ -232,7 +236,7 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label for="emailAddress">Email Address</label>
-                        <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address"
+                        <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Enter email address"
                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
                       </div>
                     </div>
@@ -240,7 +244,7 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label for="cargoType">Cargo Type</label>
-                        <input type="text" class="form-control" id="cargoType" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
+                        <input type="text" class="form-control" id="cargoType" name="cargotype" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter cargo type'" />
                       </div>
                     </div>
@@ -248,7 +252,7 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label for="countryOfOrigin">Country of Origin</label>
-                        <input type="text" class="form-control" id="countryOfOrigin" placeholder="Enter country of origin"
+                        <input type="text" class="form-control" name="countryoforigin" id="countryOfOrigin" placeholder="Enter country of origin"
                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
                       </div>
                     </div>
@@ -256,7 +260,7 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-4">
                       <div class="form-group">
                         <label for="destination">Destination</label>
-                        <input type="text" class="form-control" id="destination" placeholder="Enter destination"
+                        <input type="text" class="form-control" name="destination" id="destination" placeholder="Enter destination"
                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
                       </div>
                     </div>
@@ -264,7 +268,7 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-3">
                       <div class="form-group">
                         <label for="quantity">Quantity</label>
-                        <input type="text" class="form-control" id="quantity" placeholder="Enter quantity" onfocus="this.placeholder = ''"
+                        <input type="number" class="form-control" name="quantity" min="1" id="quantity" placeholder="Enter quantity in number" onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter quantity'" />
                       </div>
                     </div>
@@ -272,7 +276,7 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-3">
                       <div class="form-group">
                         <label for="weight">Weight</label>
-                        <input type="text" class="form-control" id="weight" placeholder="Enter weight" onfocus="this.placeholder = ''"
+                        <input type="number" class="form-control"  name="weight" min="1" id="weight" placeholder="Enter weight in kg" onfocus="this.placeholder = ''"
                           onblur="this.placeholder = 'Enter weight'" />
                       </div>
                     </div>
@@ -280,12 +284,20 @@ We proud ourselves as among top fast and credible forwarders.
                     <div class="col-lg-3">
                       <div class="form-group">
                         <label for="width">Size</label>
+                        
+                      	<div class="form-select" id="default-select">
+                          <select name="size">
+                            <option value="">Choose a size</option>
+                            <option value="4">4ft</option>
+                            <option value="5">5ft</option>
+                          </select>
+                        </div>
 
-                        <select name="size" class="form-control" id="width">
+                        {{-- <select name="size" class="form-control" id="width">
                           <option selected disabled>-- select size --</option>
                           <option value="">4ft</option>
                           <option value="">5ft</option>
-                        </select>
+                        </select> --}}
 
                         {{-- <input type="text" class="form-control" id="width" placeholder="Enter width" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter width'" /> --}}
                       </div>
@@ -294,13 +306,13 @@ We proud ourselves as among top fast and credible forwarders.
                     
                     <div class="col-lg-12 mt-4">
                       <div class="text-center confirm_btn_box">
-                        <button class="main_btn text-uppercase">Request a Quote</button>
+                        <button class="main_btn text-uppercase" type="submit">Request a Quote</button>
                       </div>
                     </div>
                   </div>
                 </div>
-
-
+              </form>
+              <form action="">
                 <div class="tab-pane fade" id="nav-trackShipment" role="tabpanel" aria-labelledby="nav-trackShipment-tab">
                   <div class="row">
                     <div class="col-lg-12">
@@ -310,8 +322,6 @@ We proud ourselves as among top fast and credible forwarders.
                           placeholder="Enter COIP eg SLO0065" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter COIP eg SLO0065'" />
                       </div>
                     </div>
-
-                   
                     <div class="col-lg-12 mt-4">
                       <div class="text-center confirm_btn_box">
                         <button class="main_btn text-uppercase">Request a Quote</button>
@@ -319,8 +329,12 @@ We proud ourselves as among top fast and credible forwarders.
                     </div>
                   </div>
                 </div>
+              </form>
+
+               
               </div>
-            </form>
+           
+         
           </div>
         </div>
       </div>
