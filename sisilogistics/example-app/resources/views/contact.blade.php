@@ -36,6 +36,7 @@
   <!-- ================ contact section start ================= -->
   <section class="section_gap">
     <div class="container">
+      <h2>OUR LOCATION</h2>
       <div class="d-none d-sm-block mb-5 pb-4">
         <div id="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15846.399474679385!2d39.2870485!3d-6.8184233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x582297659654c956!2sSMART%20INTEGRATED%20SOLUTIONS%20INTERNATIONAL%20(SISI)%20LIMITED!5e0!3m2!1sen!2stz!4v1652801917355!5m2!1sen!2stz" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
