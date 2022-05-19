@@ -99,219 +99,152 @@
     </section>
     <!--================ end Service Area =================-->
   
-    <!--================ Start Quote Area =================-->
-    <section class="quote-area">
-      <div class="container">
-        <div class="row justify-content-center text-left section-title-wrap">
-          <div class="col-lg-12">
-            <h5>Get a quote now!</h5>
-            <h2 class="text-sisi">
-              Check the estimated cost for <br>
-              your requesting goods
-            </h2>
-          </div>
+     <!--================ Start Quote Area =================-->
+  <section class="quote-area">
+    <div class="container">
+      <div class="row justify-content-center text-left section-title-wrap">
+        <div class="col-lg-12">
+          <h5>Get a quote now!</h5>
+          <h2 class="text-sisi">
+            Check the estimated cost for <br>
+            your requesting goods
+          </h2>
         </div>
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-12">
-            <div class="estimated-cost">
-              <form class="form-wrap" action="#">
-                <nav>
-                  <div class="nav nav-tabs justify-content-md-start justify-content-center" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-getEstimation-tab" data-toggle="tab" href="#nav-getEstimation"
-                      role="tab" aria-controls="nav-getEstimation" aria-selected="true">Get an estimation</a>
-                    <a class="nav-item nav-link" id="nav-trackShipment-tab" data-toggle="tab" href="#nav-trackShipment"
-                      role="tab" aria-controls="nav-trackShipment" aria-selected="false">Track Shipment</a>
-                  </div>
-                </nav>
-  
-                <!-- Tab Content -->
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-getEstimation" role="tabpanel" aria-labelledby="nav-getEstimation-tab">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="firstName">First name</label>
-                          <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter first name'" />
-                        </div>
+      </div>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-12">
+          <div class="estimated-cost">
+         
+              <nav>
+                <div class="nav nav-tabs justify-content-md-start justify-content-center" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-getEstimation-tab" data-toggle="tab" href="#nav-getEstimation"
+                    role="tab" aria-controls="nav-getEstimation" aria-selected="true">Get an estimation</a>
+                  <a class="nav-item nav-link" id="nav-trackShipment-tab" data-toggle="tab" href="#nav-trackShipment"
+                    role="tab" aria-controls="nav-trackShipment" aria-selected="false">Track Shipment</a>
+                </div>
+              </nav>
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="nav-tabContent">
+                <form class="form-wrap" action="/getEstimatedPrice" method="POST">
+                 @csrf
+                <div class="tab-pane fade show active" id="nav-getEstimation" role="tabpanel" aria-labelledby="nav-getEstimation-tab">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" name="firstname" id="firstName" aria-describedby="emailHelp" placeholder="Enter first name"
+                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter first name'" required />
                       </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="lastName">Last name</label>
-                          <input type="text" class="form-control" id="lastName" placeholder="Enter last name" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter last name'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" name="lastname" id="lastName" placeholder="Enter last name" onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Enter last name'" />
                       </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="emailAddress">Email Address</label>
-                          <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="emailAddress">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Enter email address"
+                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
                       </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="cargoType">Cargo Type</label>
-                          <input type="text" class="form-control" id="cargoType" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter cargo type'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="cargoType">Cargo Type</label>
+                        <input type="text" class="form-control" id="cargoType" name="cargotype" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Enter cargo type'" />
                       </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="countryOfOrigin">Country of Origin</label>
-                          <input type="text" class="form-control" id="countryOfOrigin" placeholder="Enter country of origin"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="countryOfOrigin">Country of Origin</label>
+                        <input type="text" class="form-control" name="countryoforigin" id="countryOfOrigin" placeholder="Enter country of origin"
+                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
                       </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="destination">Destination</label>
-                          <input type="text" class="form-control" id="destination" placeholder="Enter destination"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" name="destination" id="destination" placeholder="Enter destination"
+                          onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
                       </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="quantity">Quantity</label>
-                          <input type="text" class="form-control" id="quantity" placeholder="Enter quantity" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter quantity'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" class="form-control" name="quantity" min="1" id="quantity" placeholder="Enter quantity in number" onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Enter quantity'" />
                       </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="weight">Weight</label>
-                          <input type="text" class="form-control" id="weight" placeholder="Enter weight" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter weight'" />
-                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label for="weight">Weight</label>
+                        <input type="number" class="form-control"  name="weight" min="1" id="weight" placeholder="Enter weight in kg" onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Enter weight'" />
                       </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="width">Size</label>
-  
-                          <select name="size" class="form-control" id="width">
-                            <option selected disabled>-- select size --</option>
-                            <option value="">4ft</option>
-                            <option value="">5ft</option>
+                    </div>
+
+                    <div class="col-lg-3">
+                      <div class="form-group">
+                        <label for="width">Size</label>
+                        
+                      	<div class="form-select" id="default-select">
+                          <select name="size">
+                            <option value="">Choose a size</option>
+                            <option value="4">4ft</option>
+                            <option value="5">5ft</option>
                           </select>
-  
-                          {{-- <input type="text" class="form-control" id="width" placeholder="Enter width" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter width'" /> --}}
-                        </div>
-                      </div>
-  
-                      
-                      <div class="col-lg-12 mt-4">
-                        <div class="text-center confirm_btn_box">
-                          <button class="main_btn text-uppercase">Request a Quote</button>
                         </div>
                       </div>
                     </div>
-                  </div>
-  
-  
-                  <div class="tab-pane fade" id="nav-trackShipment" role="tabpanel" aria-labelledby="nav-trackShipment-tab">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <div class="form-group">
-                          <label for="firstName2">COIP Ref No.</label>
-                          <input type="text" class="form-control" id="firstName2" aria-describedby="emailHelp"
-                            placeholder="Enter COIP eg SLO0065" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter COIP eg SLO0065'" />
-                        </div>
-                      </div>
-  
-                      {{-- <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="lastName2">Last name</label>
-                          <input type="text" class="form-control" id="lastName2" placeholder="Enter last name" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter last name'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="emailAddress2">Email Address</label>
-                          <input type="email" class="form-control" id="emailAddress2" placeholder="Enter email address"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="cargoType2">Cargo Type</label>
-                          <input type="text" class="form-control" id="cargoType2" placeholder="Enter cargo type" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter cargo type'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="countryOfOrigin2">Country of Origin</label>
-                          <input type="text" class="form-control" id="countryOfOrigin2" placeholder="Enter country of origin"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter country of origin'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-4">
-                        <div class="form-group">
-                          <label for="destination2">Destination</label>
-                          <input type="text" class="form-control" id="destination2" placeholder="Enter destination"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter destination'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="quantity2">Quantity</label>
-                          <input type="text" class="form-control" id="quantity2" placeholder="Enter quantity" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter quantity'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="weight2">Weight</label>
-                          <input type="text" class="form-control" id="weight2" placeholder="Enter weight" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter weight'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="width2">Width</label>
-                          <input type="text" class="form-control" id="width2" placeholder="Enter width" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter width'" />
-                        </div>
-                      </div>
-  
-                      <div class="col-lg-3">
-                        <div class="form-group">
-                          <label for="height2">Height</label>
-                          <input type="text" class="form-control" id="height2" placeholder="Enter height" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter height'" />
-                        </div>
-                      </div> --}}
-                      
-                      <div class="col-lg-12 mt-4">
-                        <div class="text-center confirm_btn_box">
-                          <button class="main_btn text-uppercase">Request a Quote</button>
-                        </div>
+
+                    
+                    <div class="col-lg-12 mt-4">
+                      <div class="text-center confirm_btn_box">
+                        <button class="main_btn text-uppercase" type="submit">Request a Quote</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </form>
-            </div>
+              <form action="">
+                <div class="tab-pane fade" id="nav-trackShipment" role="tabpanel" aria-labelledby="nav-trackShipment-tab">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="firstName2">COIP Ref No.</label>
+                        <input type="text" class="form-control" id="firstName2" aria-describedby="emailHelp"
+                          placeholder="Enter COIP eg SLO0065" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter COIP eg SLO0065'" />
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                      <div class="text-center confirm_btn_box">
+                        <button class="main_btn text-uppercase">Request a Quote</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+               
+              </div>
+           
+         
           </div>
         </div>
       </div>
-    </section>
-    <!--================ End Quote Area =================-->
+    </div>
+  </section>
+  <!--================ End Quote Area =================-->
 
 @endsection

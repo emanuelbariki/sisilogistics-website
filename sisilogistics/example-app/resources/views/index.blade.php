@@ -292,14 +292,6 @@ We proud ourselves as among top fast and credible forwarders.
                             <option value="5">5ft</option>
                           </select>
                         </div>
-
-                        {{-- <select name="size" class="form-control" id="width">
-                          <option selected disabled>-- select size --</option>
-                          <option value="">4ft</option>
-                          <option value="">5ft</option>
-                        </select> --}}
-
-                        {{-- <input type="text" class="form-control" id="width" placeholder="Enter width" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter width'" /> --}}
                       </div>
                     </div>
 
