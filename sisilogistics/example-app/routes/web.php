@@ -38,5 +38,8 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
+Route::get('/newsletter/subscribe',[newsletterSubscribersController::class,]);
+
+
 Route::post('/getEstimatedPrice', [EstimatedPriceController::class,'store']);
 

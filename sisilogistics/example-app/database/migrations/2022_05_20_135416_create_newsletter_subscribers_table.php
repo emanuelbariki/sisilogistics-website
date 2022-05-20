@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('newsletter_subscribers', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('subject');
+            $table->string('action');
+            $table->string('body');
+            $table->string('status');
             $table->timestamps();
         });
     }
