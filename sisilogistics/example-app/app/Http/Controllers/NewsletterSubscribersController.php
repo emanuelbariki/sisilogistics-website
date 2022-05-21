@@ -5,9 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\newsletter_subscribers;
 use App\Http\Requests\Storenewsletter_subscribersRequest;
 use App\Http\Requests\Updatenewsletter_subscribersRequest;
+use GuzzleHttp\Psr7\Request;
 
 class NewsletterSubscribersController extends Controller
 {
+
+    public function newsletterForm(){
+        return view('/newsletter');
+    }
+
+    public function storeEmails(Request $request){
+     newsletter_subscribers::create($request->email);  
+    }
     /**
      * Display a listing of the resource.
      *
