@@ -50,5 +50,5 @@ Route::get('/newsletter',[NewsletterSubscribersController::class,'newsletterForm
 Route::post('/getEstimatedPrice', [EstimatedPriceController::class,'store']);
 
 
-Route::post('/newsletter', [EstimatedPriceController::class,'storeEmails']);
+Route::post('/newsletter', [NewsletterSubscribersController::class,'storeEmails'])->name('email.store');
 

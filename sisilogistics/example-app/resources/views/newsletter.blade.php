@@ -11,7 +11,8 @@
   <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3 mt-5">
-            <form>
+            <form action="{{route('email.store')}}" method="POST">
+              @csrf
                 <div class="form-group mb-2">
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

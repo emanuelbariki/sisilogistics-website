@@ -16,9 +16,9 @@ class MailMaster extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($credentials)
     {
-        //
+        $this->credentials = $credentials;
     }
 
     /**
@@ -28,6 +28,7 @@ class MailMaster extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        $details = $this->credentials;
+        return $this->subject($details['subject'])->view('mails.email_template', compact('details'));
     }
 }

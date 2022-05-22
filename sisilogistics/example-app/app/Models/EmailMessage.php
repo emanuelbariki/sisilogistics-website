@@ -5,8 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class newsletter_subscribers extends Model
+class EmailMessage extends Model
 {
     use HasFactory;
-    protected $fillable = ['email'];
 }

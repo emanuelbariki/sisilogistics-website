@@ -8,7 +8,7 @@ use App\Mail\MailMaster;
 
 class EmailController extends Controller
 {
-    public function sendEmail($title, $subject, $body, $email){
+    public function sendEmail($title, $subject, $body, $email, $name="", $admin=""){
   $credentials = [
       'title'=>$title,
       'subject'=>$subject,

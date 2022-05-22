@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\EmailMessage;
 
 use App\Models\newsletter_subscribers;
 use App\Http\Requests\Storenewsletter_subscribersRequest;
@@ -15,7 +16,19 @@ class NewsletterSubscribersController extends Controller
     }
 
     public function storeEmails(Request $request){
-     newsletter_subscribers::create($request->email);  
+
+     newsletter_subscribers::create(['email'=>$request->email]); 
+     $mail_controller = new EmailController;
+     $subscriber_message = EmailMessage::where('action','NEWSLETTER_SUBSCRIPTION_CUSTOMER')->first();      //row with action,title to be sent to subscriber
+     $admin_message = EmailMessage::where('action','NEWSLETTER_SUBSCRIPTION_ADMIN')->first();
+     if($subscriber_message){
+          $mail_controller->sendEmail($subscriber_message->title, $subscriber_message->subject, $subscriber_message->body, $request->email);
+     }
+     if($admin_message){
+        $mail_controller->sendEmail($admin_message->title, $admin_message->subject, $admin_message->body, $request->email, '','Admin');
+   }
+
+   return back();
     }
     /**
      * Display a listing of the resource.
