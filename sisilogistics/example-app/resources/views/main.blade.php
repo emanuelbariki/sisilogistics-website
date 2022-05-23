@@ -172,11 +172,25 @@
           <div class="single-footer-widget">
             <h6>Newsletter</h6>
             <p>Stay update with our latest</p>
-            <div class="" id="mc_embed_signup">
-              <form target="_blank" novalidate="true" action="/newsltter" method="post" class="form-inline">
-                <input class="form-control" name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Email Address'" required="" type="email">
-                <button class="click-btn btn btn-default"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            <div class="" id="emailAddress">
+              <form target="_blank" novalidate="true" action="/getnewsletter" method="POST" class="form-inline">
+                <input class="form-control"  name="email" id="emailAddress"placeholder="Enter email address" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Enter email address'" required="" type="email">
+                <button class="click-btn btn btn-default" type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                @csrf
+
+
+{{-- 
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Enter email address"
+                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" />
+                  </div>
+                </div> --}}
+
+
+
                 <div style="position: absolute; left: -5000px;">
                   <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                 </div>

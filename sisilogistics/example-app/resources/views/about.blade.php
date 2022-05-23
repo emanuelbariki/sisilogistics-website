@@ -106,12 +106,12 @@
 
 
   <!--================ About Area =================-->
-  <section class="about-area">
+   <section class="about-area">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-12">
           <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                   <div class="single-feature">
@@ -137,119 +137,8 @@
             </div>
           </div>
         </div>
-
-        <div class="offset-lg-1 col-lg-4">
-          <div class="about_box">
-            <div class="activity">
-              <div class="row">
-                <div class="col-lg-6 col-md-3 col-6">
-                  <div class="activity_box">
-                    <div>
-                      <img src="img/about/i1.png" alt="">
-                    </div>
-                    <h3>$<span class="counter">2500</span>+</h3>
-                    <p>Packages Delivered</p>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-3 col-6">
-                  <div class="activity_box">
-                    <div>
-                      <img src="img/about/i2.png" alt="">
-                    </div>
-                    <h3>$<span class="counter">500</span>+</h3>
-                    <p>Satisfied Clients</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-3 col-6">
-                  <div class="activity_box">
-                    <div>
-                      <img src="img/about/i3.png" alt="">
-                    </div>
-                    <h3>$<span class="counter">70</span>+</h3>
-                    <p>Contries reach</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-3 col-6">
-                  <div class="activity_box">
-                    <div>
-                      <img src="img/about/i4.png" alt="">
-                    </div>
-                    <h3 class="counter">5000</h3>
-                    <p>Tons of goods</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
-  <!--================ End About Are
-
-
-
-
-
-  <!-================ Start Testimonial Area =================-->
-  <section class="testimonial-area">
-    <div class="container">
-      <div class="row justify-content-center section-title-wrap">
-        <div class="col-lg-12">
-          <h5>User Feedback</h5>
-          <h2>
-            What our customers feedback <br>
-            for amazing service.
-          </h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="owl-carousel active_testimonial">
-            <!-- single testi -->
-            <div class="single_testi">
-              <div class="testi_content">
-                <p>
-                  “Us multiply given in all hath given may meat god won't abundantly appear lights fourth madman man
-                  said god dominion great. Gathering called very. Midst shall after created from fruitful. Place sea
-                  upon air. Female beast midst fly morning after light creepeth”
-                </p>
-              </div>
-              <div class="testi_author d-flex justify-content-center align-items-center">
-                <div class="thumb mr-4"><img src="img/testi-author.png" alt=""></div>
-                <div class="a-desc text-left">
-                  <h6>Marvel Maison</h6>
-                  <p>Chief Executive, Amazon</p>
-                </div>
-              </div>
-            </div>
-            <!-- single testi -->
-            <div class="single_testi">
-              <div class="testi_content">
-                <p>
-                  “Us multiply given in all hath given may meat god won't abundantly appear lights fourth madman man
-                  said god dominion great. Gathering called very. Midst shall after created from fruitful. Place sea
-                  upon air. Female beast midst fly morning after light creepeth”
-                </p>
-              </div>
-              <div class="testi_author d-flex justify-content-center align-items-center">
-                <div class="thumb mr-4"><img src="img/testi-author.png" alt=""></div>
-                <div class="a-desc text-left">
-                  <h6>Marvel Maison</h6>
-                  <p>Chief Executive, Amazon</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--================ end Testimonial Area =================-->
-
-   
-
-  
+    
 
 @endsection
