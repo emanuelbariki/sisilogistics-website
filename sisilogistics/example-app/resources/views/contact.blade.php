@@ -16,7 +16,7 @@
               </div>
               <div class="banner-right position-relative">
                 <p>
-                  If you are looking at blank cassettes on the web, you may be very confused.
+                  Email us with any questions or inquiries. We would be happy to Answer.
                 </p>
                 <span class="main_btn mt-4 mt-md-0" href="#">
                   <a href="index.html" class="text-white">Home</a>
@@ -78,6 +78,7 @@
           </form>
         </div>
 
+        
         <div class="col-lg-4">
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-home"></i></span>
