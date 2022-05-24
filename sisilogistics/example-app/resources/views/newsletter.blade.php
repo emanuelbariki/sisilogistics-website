@@ -16,7 +16,6 @@
                 <div class="form-group mb-2">
                   <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        
                 <button type="submit" class="btn btn-primary">Subscribe to our newsletter</button>
               </form>
         </div>

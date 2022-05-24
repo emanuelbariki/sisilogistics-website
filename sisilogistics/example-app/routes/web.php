@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EstimatedPriceController;
 use App\Http\Controllers\NewsletterSubscribersController;
+use App\Http\Controllers\NewsletterHandler;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,10 +46,12 @@ Route::get('/blog', function () {
 });
 
 
-Route::get('/newsletter',[NewsletterSubscribersController::class,'newsletterForm']);
+// Route::get('/newsletter',[NewsletterSubscribersController::class,'newsletterForm']);
 
 Route::post('/getEstimatedPrice', [EstimatedPriceController::class,'store']);
 
 
-Route::post('/email.success', [NewsletterSubscribersController::class,'storeEmails'])->name('email.store');
+// Route::post('/email.success', [NewsletterSubscribersController::class,'storeEmails'])->name('email.store');
+
+Route::resource('new_letter', NewsletterHandler::class);
 

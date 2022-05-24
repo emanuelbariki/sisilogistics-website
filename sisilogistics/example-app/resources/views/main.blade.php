@@ -173,8 +173,8 @@
             <h6>Newsletter</h6>
             <p>Stay update with our latest</p>
             <div class="" id="emailAddress">
-              <form target="_blank" novalidate="true" action="/getnewsletter" method="POST" class="form-inline">
-                <input class="form-control"  name="email" id="emailAddress"placeholder="Enter email address" onfocus="this.placeholder = ''"
+              <form  action="{{ route('new_letter.store') }}" method="POST" class="form-inline">
+                <input class="form-control"  name="user_email" id="emailAddress"placeholder="Enter email address" onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter email address'" required="" type="email">
                 <button class="click-btn btn btn-default" type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                 @csrf

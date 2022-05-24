@@ -20,8 +20,8 @@ class NewsletterSubscribersController extends Controller
 
     public function storeEmails(Request $request){
         // dd($request->email);
-        $newsletter_subscribers = new newsletter_subscribers();
-        $newsletter_subscribers->email = $request->input('email');
+        // $newsletter_subscribers = new newsletter_subscribers();
+        //$newsletter_subscribers->email = $request->input('email');
 
         // newsletter_subscribers::create(['email'=>$request->email]); 
         // $mail_controller = new EmailController;
@@ -39,7 +39,7 @@ class NewsletterSubscribersController extends Controller
         //     }
         // }
 
-        return view('email.success');
+       // return view('email.success');
     }
     /**
      * Display a listing of the resource.

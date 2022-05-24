@@ -21,7 +21,7 @@
                 <span class="main_btn mt-4 mt-md-0" href="#">
                   <a href="index.html" class="text-white">Contact Us</a> 
                   <i class="fa fa-arrow-right mx-2"></i>
-                  <a href="about.html" class="text-white">News Letter</a> 
+                  <a href="/home" class="text-white">News Letter</a> 
                 </span>
               </div>
             </div>
