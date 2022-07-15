@@ -50,6 +50,12 @@ Route::get('/blog', function () {
 
 Route::post('/getEstimatedPrice', [EstimatedPriceController::class,'store']);
 
+Route::get('/fresh_migrate_online', function () {
+    $exitCode = Artisan::call('key:generate');
+    $exitCode = Artisan::call('migrate');
+    $exitCode = Artisan::call('optimize clear');
+});
+
 
 // Route::post('/email.success', [NewsletterSubscribersController::class,'storeEmails'])->name('email.store');
 
